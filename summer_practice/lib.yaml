@@ -1,0 +1,48 @@
+transactional-outbox:
+  type: Web
+  title: Паттерн Transactional Outbox — обеспечение надёжной доставки сообщений при работе с базами данных
+  url:
+    value: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html
+    date: 2025-09-17
+
+golang:
+  type: Web
+  title: Язык программирования Go — официальная документация и руководство
+  url:
+    value: https://go.dev/
+    date: 2025-09-17
+
+chi:
+  type: Web
+  title: Фреймворк chi для маршрутизации HTTP-запросов в Go — официальная документация
+  url:
+    value: https://pkg.go.dev/github.com/go-chi/chi
+    date: 2025-09-17
+
+xxhash:
+  type: Web
+  title: Алгоритм хеширования xxHash — официальная документация и описание
+  url:
+    value: https://xxhash.com/
+    date: 2025-09-17
+
+apache-kafka:
+  type: Web
+  title: Apache Kafka — распределённая платформа потоковой обработки и брокер сообщений
+  url:
+    value: https://kafka.apache.org/
+    date: 2025-09-17
+
+postgresql:
+  type: Web
+  title: PostgreSQL — реляционная система управления базами данных с открытым исходным кодом
+  url:
+    value: https://www.postgresql.org/
+    date: 2025-09-17
+
+minio:
+  type: Web
+  title: MinIO — высокопроизводительное объектное хранилище
+  url:
+    value: https://docs.min.io/community/minio-object-store/index.html
+    date: 2025-09-17
