@@ -1,0 +1,66 @@
+gost-12.0.003-2015:
+  type: Web
+  title: ГОСТ 12.0.003-2015. Система стандартов безопасности труда. Опасные и вредные производственные факторы. Классификация
+  url:
+    value: https://docs.cntd.ru/document/1200136071
+    date: 2026-04-04
+
+belov-bjd:
+  type: Book
+  title: Безопасность жизнедеятельности. Учебник для вузов / под ред. С. В. Белова
+  publisher: Юрайт
+  year: 2023
+
+devisilov-ohrana-truda:
+  type: Book
+  title: Охрана труда. Учебное пособие / В. Н. Девисилов
+  publisher: ФОРУМ
+  year: 2022
+
+karnaukh-bzp:
+  type: Book
+  title: Безопасность труда в промышленности / Н. Н. Карнаух
+  publisher: Академия
+  year: 2021
+
+gost-121003-83:
+  type: Web
+  title: ГОСТ 12.1.003-83. Система стандартов безопасности труда. Шум. Общие требования безопасности
+  url:
+    value: https://docs.cntd.ru/document/5200291
+    date: 2026-04-04
+
+gost-121050-86:
+  type: Web
+  title: ГОСТ 12.1.050-86. Система стандартов безопасности труда. Методы измерения шума на рабочих местах
+  url:
+    value: https://docs.cntd.ru/document/1200005186
+    date: 2026-04-04
+
+osha-otm-noise:
+  type: Web
+  title: OSHA Technical Manual, Section III, Chapter 5. Noise
+  url:
+    value: https://www.osha.gov/otm/section-3-health-hazards/chapter-5
+    date: 2026-04-04
+
+cdc-noise-rel:
+  type: Web
+  title: Noise-Induced Hearing Loss
+  url:
+    value: https://www.cdc.gov/niosh/noise/about/noise.html
+    date: 2026-04-04
+
+cdc-understand-noise:
+  type: Web
+  title: Understand Noise Exposure
+  url:
+    value: https://www.cdc.gov/niosh/noise/prevent/understand.html
+    date: 2026-04-04
+
+osha-noise-controls:
+  type: Web
+  title: Occupational Noise Exposure - Exposure & Controls
+  url:
+    value: https://www.osha.gov/noise/exposure-controls
+    date: 2026-04-04
