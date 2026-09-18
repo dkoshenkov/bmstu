@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .choice {
+            display: flex;
+            width: 70px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 9%;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .choice:hover {
+            background-color: #f0f0f0;
+        }
+
+        #game-container {
+            display: none;
+            margin-left: auto;
+            margin-right: auto
+
+        }
+
+        #game-over {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 style="border: 5px groove #ccc; margin: 10px; padding: 20px">Камень-Ножницы-Бумага</h1>
+<div class="container">
+    <button id="start-game" class="button">Начать игру</button>
+    <div id="game-mode">
+        <label><input type="radio" name="game-mode" value="pc"  checked> Играть с ПК</label>
+        <label><input type="radio" name="game-mode" value="friend"> Играть с другом</label>
+    </div>
+</div>
+<div id="game-container" class="container">
+    <div id="rock" class="choice" style="background-color: #e6e6e6">
+        камень
+    </div>
+    <div id="paper" class="choice" style="background-color: #ffff99">
+        ножницы
+    </div>
+    <div id="scissors" class="choice" style="background-color: #9999ff">
+        бумага
+    </div>
+</div>
+<div id="game-over" class="container">
+    <h1>
+    <p id="result"></p>
+    </h1>
+    <button id="play-again" class="button" style="margin: 5px;">Играть еще раз</button>
+    <button id="end-game" class="button" style="margin: 5px;">Конец игры</button>
+</div>
+
+<script>
+    let gameMode = null;
+    let player1Choice = null;
+    let player2Choice = null;
+    let computerChoice = null;
+    let game_result = {
+        rock: 'Камень',
+        paper: 'Бумага',
+        scissors: 'Ножницы'
+    };
+
+    const startGameButton = document.getElementById('start-game');
+    const gameModeElement = document.getElementById('game-mode');
+    const gameContainer = document.getElementById('game-container');
+    const gameOverElement = document.getElementById('game-over');
+    const resultElement = document.getElementById('result');
+    const playAgainButton = document.getElementById('play-again');
+    const endGameButton = document.getElementById('end-game');
+
+    startGameButton.addEventListener('click', () => {
+        gameMode = gameModeElement.querySelector('input[name="game-mode"]:checked').value;
+        startGameButton.style.display = 'none';
+        gameModeElement.style.display = 'none';
+        gameContainer.style.display = 'flex';
+    });
+
+    gameContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('choice')) {
+            if (gameMode === 'pc') {
+                player1Choice = event.target.id;
+                computerChoice = getComputerChoice();
+                playRound();
+            } else if (gameMode === 'friend') {
+                if (!player1Choice) {
+                    player1Choice = event.target.id;
+                    alert('Ожидаем выбора второго игрока...');
+                } else {
+                    player2Choice = event.target.id;
+                    playRoundWithFriend();
+                }
+            }
+        }
+    });
+
+    function getComputerChoice() {
+        const choices = ['rock', 'paper', 'scissors'];
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
+
+    function playRound() {
+        let result = '';
+        if (player1Choice === computerChoice) {
+            result = 'Ничья!';
+        } else if ((player1Choice === 'rock' && computerChoice === 'scissors') ||
+            (player1Choice === 'scissors' && computerChoice === 'paper') ||
+            (player1Choice === 'paper' && computerChoice === 'rock')) {
+            result = 'Вы выиграли!';
+        } else {
+            result = 'ПК выиграл!';
+        }
+        resultElement.textContent = `Вы выбрали: ${game_result[player1Choice]}, ПК выбрал: ${game_result[computerChoice]}. ${result}`;
+        gameContainer.style.display = 'none';
+        gameOverElement.style.display = 'flex';
+    }
+
+    function playRoundWithFriend() {
+        let result = '';
+        if (player1Choice === player2Choice) {
+            result = 'Ничья!';
+        } else if ((player1Choice === 'rock' && player2Choice === 'scissors') ||
+            (player1Choice === 'scissors' && player2Choice === 'paper') ||
+            (player1Choice === 'paper' && player2Choice === 'rock')) {
+            result = 'Первый игрок выиграл!';
+        } else {
+            result = 'Второй игрок выиграл!';
+        }
+        resultElement.textContent = `Первый игрок выбрал: ${game_result[player1Choice]}, Второй игрок выбрал: ${game_result[player2Choice]}. ${result}`;
+        gameContainer.style.display = 'none';
+        gameOverElement.style.display = 'flex';
+    }
+
+    playAgainButton.addEventListener('click', () => {
+        gameOverElement.style.display = 'none';
+        resultElement.textContent = '';
+        player1Choice = null;
+        player2Choice = null;
+        gameContainer.style.display = 'flex';
+        // Don't show the game mode selection menu again
+        // startGameButton.style.display = 'block';
+        // gameModeElement.style.display = 'block';
+    });
+
+    endGameButton.addEventListener('click', () => {
+        gameOverElement.style.display = 'none';
+        resultElement.textContent = '';
+        player1Choice = null;
+        player2Choice = null;
+        gameContainer.style.display = 'none';
+        startGameButton.style.display = 'block';
+        gameModeElement.style.display = 'block';
+    });
+</script>
+</body>
+</html>

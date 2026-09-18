@@ -1,0 +1,5 @@
+для запуска:
+
+g++ -c main.cpp -o main.o
+nasm -f elf64 sum.asm -o sum.o 
+g++ main.o sum.o -o main -z noexecstack
