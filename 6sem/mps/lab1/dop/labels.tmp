@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega8515</DEVICE>
+ <WORKING_DIR>C:\Users\reeey\Desktop\sem6\mps\lab1\dop</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8515def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>11</LINE></INIT>
+  <LOOP><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>21</LINE></LOOP>
+  <LOOPER><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>28</LINE></LOOPER>
+  <END><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>34</LINE></END>
+  <LAMP_OFF><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>46</LINE></LAMP_OFF>
+  <LAMP_ON><FILE>C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm</FILE><LINE>50</LINE></LAMP_ON>
+ </LABELS>
+</ASSEMBLER_INFO>

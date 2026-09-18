@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\labels.tmp" -fI -W+ie -C V2E -o "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.hex" -d "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.obj" -e "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.eep" -m "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.map" "C:\Users\reeey\Desktop\sem6\mps\lab1\dop\dop.asm"

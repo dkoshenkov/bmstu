@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega8515</DEVICE>
+ <WORKING_DIR>C:\Users\reeey\Desktop\sem6\mps\lab2\task3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8515def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>29</LINE></INIT>
+  <START_ISR><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>102</LINE></START_ISR>
+  <STOP_ISR><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>110</LINE></STOP_ISR>
+  <LOOP><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>70</LINE></LOOP>
+  <DELAY_MS><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>118</LINE></DELAY_MS>
+  <MOVE_RIGHT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>85</LINE></MOVE_RIGHT>
+  <MOVE_LEFT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>92</LINE></MOVE_LEFT>
+  <wait_start_release><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>104</LINE></wait_start_release>
+  <wait_stop_release><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>112</LINE></wait_stop_release>
+  <del3><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>120</LINE></del3>
+  <del2><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>122</LINE></del2>
+  <del1><FILE>C:\Users\reeey\Desktop\sem6\mps\lab2\task3\task3.asm</FILE><LINE>124</LINE></del1>
+ </LABELS>
+</ASSEMBLER_INFO>

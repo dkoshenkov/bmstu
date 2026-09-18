@@ -1,0 +1,3 @@
+/home/dmitry/Desktop/sem6/comp_math/lab5/cmake-build-debug/CMakeFiles/lab5.dir
+/home/dmitry/Desktop/sem6/comp_math/lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dmitry/Desktop/sem6/comp_math/lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

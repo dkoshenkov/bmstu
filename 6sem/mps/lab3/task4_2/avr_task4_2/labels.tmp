@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega8515</DEVICE>
+ <WORKING_DIR>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8515def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>41</LINE></INIT>
+  <START><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>58</LINE></START>
+  <check_G><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>60</LINE></check_G>
+  <check_D><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>75</LINE></check_D>
+  <play_G><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>68</LINE></play_G>
+  <check_A><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>88</LINE></check_A>
+  <play_D><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>84</LINE></play_D>
+  <check_F><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>103</LINE></check_F>
+  <play_A><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>98</LINE></play_A>
+  <play_F><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_2\avr_task4_2\avr_task4_2.asm</FILE><LINE>112</LINE></play_F>
+ </LABELS>
+</ASSEMBLER_INFO>

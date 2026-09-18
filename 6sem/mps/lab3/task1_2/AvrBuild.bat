@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\labels.tmp" -fI -W+ie -C V2E -o "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\task_1_mod.hex" -d "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\task_1_mod.obj" -e "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\task_1_mod.eep" -m "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\task_1_mod.map" "C:\Users\ggkar\OneDrive\mps\lab_3\task_1_mod\task_1_mod.asm"

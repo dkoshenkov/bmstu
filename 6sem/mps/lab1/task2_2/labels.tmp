@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega8515</DEVICE>
+ <WORKING_DIR>C:\Users\reeey\Desktop\mps\lab1\task2_2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8515def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>11</LINE></INIT>
+  <WAITSTART><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>22</LINE></WAITSTART>
+  <LOOP><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>26</LINE></LOOP>
+  <d3><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>30</LINE></d3>
+  <d1><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>32</LINE></d1>
+  <d2><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>34</LINE></d2>
+  <CONTINUE><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>47</LINE></CONTINUE>
+  <MOVE_LEFT><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>72</LINE></MOVE_LEFT>
+  <MOVE_RIGHT><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>53</LINE></MOVE_RIGHT>
+  <MOVE_RIGHT_CHECK><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>63</LINE></MOVE_RIGHT_CHECK>
+  <MOVE_RIGHT_END><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>68</LINE></MOVE_RIGHT_END>
+  <MOVE_LEFT_END><FILE>C:\Users\reeey\Desktop\mps\lab1\task2_2\task2_2.asm</FILE><LINE>81</LINE></MOVE_LEFT_END>
+ </LABELS>
+</ASSEMBLER_INFO>

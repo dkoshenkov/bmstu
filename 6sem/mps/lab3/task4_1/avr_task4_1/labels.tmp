@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega8515</DEVICE>
+ <WORKING_DIR>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8515def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</FILE><LINE>13</LINE></INIT>
+  <test_start><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</FILE><LINE>27</LINE></test_start>
+  <test_stop><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</FILE><LINE>35</LINE></test_stop>
+  <wait_0><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</FILE><LINE>32</LINE></wait_0>
+  <wait_1><FILE>C:\Users\reeey\Desktop\sem6\mps\lab3\task4_1\avr_task4_1\avr_task4_1.asm</FILE><LINE>40</LINE></wait_1>
+ </LABELS>
+</ASSEMBLER_INFO>
