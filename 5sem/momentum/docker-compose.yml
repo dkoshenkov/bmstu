@@ -1,0 +1,72 @@
+version: '3.8'
+services:
+#   gunicorn:
+#    container_name: g-app
+#    image: g-app-image
+#    build: scripts
+#    ports:
+#      - "9009:9009"
+#    networks:
+#      - app-network
+
+
+   db:
+    image: postgres:16.4
+    container_name: momentum-db
+    ports:
+      - "9900:5432"
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+    restart: unless-stopped
+    networks:
+      - app-network
+
+#   app:
+#    build: .
+#    ports:
+#      - "9099:8000"
+#    image: app-image
+#    container_name: app
+#    restart: unless-stopped
+#    volumes:
+#        - ./uploads:/app/uploads
+#    networks:
+#      - app-network
+#    depends_on:
+#      - db
+
+#   nginx:
+#      image: nginx-app-image
+#      container_name: nginx-app
+#      build: ./nginx
+#      volumes:
+#        - ./static:/vol/static
+#        - ./uploads:/vol/uploads
+#      ports:
+#        - "9999:80"
+##      depends_on:
+##        - app
+#      restart: unless-stopped
+#      networks:
+#        - app-networks
+
+
+volumes:
+  pg_data:
+    driver: local
+#  app:
+#    driver: local
+#  nginx:
+
+
+networks:
+  app-network:
+    driver: bridge
+
+

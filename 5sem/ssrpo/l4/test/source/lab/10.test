@@ -1,0 +1,11 @@
+p/new Phone 800 10
+c/new Alice Brown alice.brown@example.com
+c/view_all
+o/new_order Alice Brown 789_Maple_Rd
+o/add_product 0 Laptop 1500
+o/add_product 0 LAAAAAAP 1500
+o/view_all_orders
+o/remove 1
+o/remove
+o/remove aaaaaaa
+e

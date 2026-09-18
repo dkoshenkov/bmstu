@@ -1,0 +1,15 @@
+p/new Laptop 1500 5
+p/new Phone 800 10
+p/new Tablet 400 7
+c/new John Doe john.doe@example.com
+c/new Jane Smith jane.smith@example.com
+c/new Alice Brown alice.brown@example.com
+o/new_order John Doe 123_Main_St
+o/new_order Jane Smith 456_Oak_Ave
+o/new_order Alice Brown 789_Maple_Rd
+o/add_product 0 Laptop 1500
+o/add_product 1 Phone 800
+o/add_product 2 Tablet 400
+o/view_all_orders
+c/remove John Doe john.doe@example.com
+e

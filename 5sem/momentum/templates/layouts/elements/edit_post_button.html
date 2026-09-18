@@ -1,0 +1,4 @@
+{% if request.user.is_authenticated and request.user.profile == post.author %}
+    <a href="{% url 'edit_post' post_id=post.id %}">Редактировать</a>
+    <a href="{% url 'delete_post' post_id=post.id %}">Удалить</a>
+{% endif %}

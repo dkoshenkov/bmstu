@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1 class="white">Login</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="col-8">
+        <form method="post" class="mb-3">
+            {% bootstrap_form form %}
+            {% csrf_token %}
+            <button type="submit" class="btn my-btn mb-3 col-2 me-3">Success</button>
+            <a class="col-6 float m-3r" href="{% url 'signup' %}"> or create new account</a>
+        </form>
+
+    </div>
+{% endblock %}

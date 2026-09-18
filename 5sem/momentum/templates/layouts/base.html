@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>моментум</title>
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.3-dist/css/bootstrap.css' %}">
+    <link rel="shortcut icon" href='{% static "img/terminal_black_24dp.svg" %}'/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+</head>
+<body class="main">
+<div>
+    {% block nav %}
+        {% if request.user.is_authenticated %}
+            {% include 'layouts/nav.html' %}
+        {% else %}
+            {% include 'layouts/unsigned_nav.html' %}
+        {% endif %}
+    {% endblock %}
+    <main class="container-fluid container-lg mt-3">
+        {% block head %}
+        {% endblock %}
+        <div class="row">
+            {% block content %}
+            {% endblock %}
+            <div class="col-4">
+                <h3 class="white">Популярные теги</h3>
+                <div class="col-8">
+                    <div class="row">
+                        {% for tag in pop_tags %}
+                            <a class="col link-info" href="{% url 'tag' tag.tag_name %}">{{ tag.tag_name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <h3 class="mt-5 white">Активные пользователи</h3>
+                <div>
+                    {% for u in pop_users %}
+                        <a href="{% url 'user_profile' u.user.username %}"
+                           class="d-block link-success">{{ u.user.username }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="{% static 'bootstrap-5.3.3-dist/js/bootstrap.bundle.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#search-input').autocomplete({
+            source: "{% url 'get_suggestions' %}",
+            minLength: 2,
+            select: function (event, ui) {
+                $('#search-input').val(ui.item.value);
+                $(this).closest('form').submit();
+            }
+        });
+    });
+</script>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

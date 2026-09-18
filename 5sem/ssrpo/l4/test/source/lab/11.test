@@ -1,0 +1,16 @@
+p/new s
+p/new Laptop 150000000000000000000000000000000000000000000 5
+p/remove
+p/update
+p/update aboba 10000000000000000000000000000000000 100000000000
+c/new
+c/remove
+o/new_order
+o/new_order Aboba abobovich bmstu
+o/add_product
+o/add_product a Laptop 1500
+o/add_product 0 Laptop 1500000000000000000000000000000000000000000000000
+o/add_product 0 Laptop 1500
+o/view_all_orders
+c/view_all
+d

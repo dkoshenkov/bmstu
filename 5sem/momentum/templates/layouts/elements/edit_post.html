@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1 class="white">Редактировать публикацию</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="col-8">
+        <p>Вы уверены, что хотите удалить эту публикацию? Это действие необратимо.</p>
+        <form method="post">
+            {% csrf_token %}
+             {% bootstrap_form form %}
+            <button type="submit">Сохранить изменения</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block head %}
+    <h2 class="white">Подписки <a href="{% url 'user_profile' profile_user.user.username %}">{{ profile_user.user.username }}</a></h2>
+{% endblock %}
+
+{% block content %}
+    <div class="col-8">
+        <div class="following-info">
+            {% if following %}
+                <ul>
+                    {% for f in following %}
+                        <div class="card p-3">
+                            <div class="row">
+                                <div class="col-2 p-2">
+                                    <div class="border mb-3 w-100 gray pic">
+                                        <img
+                                            src="{{ f.followed.avatar_path.url }}"
+                                            class="img-fluid rounded-start"
+                                            alt="..."/>
+                                    </div>
+                                </div>
+                                <span class="col p-2"> Пользователь:
+                                    <a class="card-title link-success" href="{% url 'user_profile' f.followed.user.username %}">
+                                        {{ f.followed.user.username }}
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>Горе! Нет подписок.</p>
+            {% endif %}
+            <br>
+            <a href="{% url 'user_profile' profile_user.user.username %}" class="btn btn-secondary">Назад к профилю</a>
+        </div>
+    </div>
+{% endblock %}

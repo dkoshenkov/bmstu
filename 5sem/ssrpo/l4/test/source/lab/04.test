@@ -1,0 +1,4 @@
+p/new product1 100 10
+p/update product1 150 20
+p/view_all
+e

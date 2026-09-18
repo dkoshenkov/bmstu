@@ -1,0 +1,8 @@
+*
+!*.cpp
+!test-sample*
+!.gitignore
+!.gitlab-ci.yml
+!Doxyfile.cfg
+!README.md
+

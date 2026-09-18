@@ -1,0 +1,6 @@
+p/new Laptop 1500 5
+c/new John Doe john.doe@example.com
+o/new_order John Doe 123_Main_St
+o/add_product 0 Laptop 1500
+o/view_all_orders
+e

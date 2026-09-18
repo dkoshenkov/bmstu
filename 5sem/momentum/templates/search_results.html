@@ -1,0 +1,55 @@
+{% extends 'layouts/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block content %}
+    <div class="col-8">
+        <h2 class="my-4">Результаты поиска для "{{ query }}"</h2>
+
+        <h3>Публикации</h3>
+        {% if posts %}
+            <div class="list-group mb-4">
+                {% for post in posts %}
+                    <div class="list-group-item">
+                        {% include "layouts/question.html" with item=post %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Публикации не найдены.</p>
+        {% endif %}
+
+        <h3>Пользователи</h3>
+        {% if users %}
+            <div class="list-group mb-4">
+                {% for profile in users %}
+                    <div class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ profile.avatar_path.url }}" alt="Avatar" class="rounded-circle me-3"
+                                 style="width: 50px; height: 50px;">
+                            <div>
+                                <a href="{% url 'user_profile' profile.user.username %}"
+                                   class="fw-bold">{{ profile.user.username }}</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Пользователи не найдены.</p>
+        {% endif %}
+
+        <h3>Теги</h3>
+        {% if tags %}
+            <div class="list-group mb-4">
+                {% for tag in tags %}
+                    <div class="list-group-item">
+                        <a href="{% url 'tag' tag.tag_name %}" class="fw-bold">#{{ tag.tag_name }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Теги не найдены.</p>
+        {% endif %}
+    </div>
+{% endblock %}

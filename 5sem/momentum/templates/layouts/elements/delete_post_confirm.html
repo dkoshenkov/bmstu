@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1 class="white">Удаление публикации</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="col-8">
+        <p>Вы уверены, что хотите удалить эту публикацию? Это действие необратимо.</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Удалить</button>
+            <a href="{% url 'question' question_id=post.id %}" class="btn btn-secondary">Отмена</a>
+        </form>
+    </div>
+{% endblock %}

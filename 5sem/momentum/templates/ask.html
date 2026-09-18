@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1 class="white">Ваш пост:</h1>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="col-8">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <h5>Загрузить файлы (до 10):</h5>
+            <input type="file" name="files" multiple>
+            <button type="submit" class="btn my-btn">Отправить</button>
+        </form>
+    </div>
+{% endblock %}

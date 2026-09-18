@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1 class="white">Регистрация</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="col-8">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn my-btn mb-3">Зарегестрироваться!</button>
+        </form>
+    </div>
+{% endblock %}

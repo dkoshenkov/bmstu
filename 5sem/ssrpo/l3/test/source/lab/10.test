@@ -1,0 +1,21 @@
+p/new Phone 800 10
+p/new Tablet 400 7
+p/update Tablet 401 6
+p/view_all
+p/remove Tablet
+p/view_all
+r/remove Tablet
+c/new John Doe john.doe@example.com
+c/new Jane Smith jane.smith@example.com
+c/new Alice Brown alice.brown@example.com
+c/view_all
+c/remove John Doe john.doe@example.com
+c/view_all
+o/new_order Jane Smith 456_Oak_Ave
+o/new_order Alice Brown 789_Maple_Rd
+o/add_product 0 Laptop 1500
+o/add_product 1 Phone 800
+o/view_all_orders
+o/remove 1
+o/view_all_orders
+e

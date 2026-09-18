@@ -1,0 +1,39 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+
+{% block head %}
+    <div class="d-flex gap-3 align-items-center">
+        <h4 class="white">Настройки</h4>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="col-8">
+        <div class="row">
+            <div class="float-left col-5">
+                <img src="{{ request.user.profile.avatar_path.url }}" class="start-0 border-1 border-white"
+                     style="border-radius: 20px; width: 100px"
+                     alt="...">
+            </div>
+        </div>
+
+        <div class="col-8">
+            <!-- Форма редактирования профиля -->
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% bootstrap_form profile_form %}
+                <button type="submit" name="profile_form" class="btn my-btn mb-3">Сохранить изменения</button>
+            </form>
+
+            <!-- Форма смены пароля -->
+            <form method="post">
+                {% csrf_token %}
+                {% bootstrap_form password_form %}
+                <button type="submit" name="password_form" class="btn my-btn mb-3">Изменить пароль</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static 'js/settings.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% load custom_filters %}
+
+<div class="row">
+    {% for file in question.files.all %}
+        <div class="col-md-4 mb-3">
+            {% if file.file.name|endswith:".jpg" or file.file.name|endswith:".jpeg" or file.file.name|endswith:".png" or file.file.name|endswith:".gif" %}
+                <div class="card h-100">
+                    <img src="{{ file.file.url }}" class="card-img-top img-fluid" alt="Изображение" style="max-height: 200px; object-fit: cover;">
+                </div>
+            {% elif file.file.name|endswith:".mp4" or file.file.name|endswith:".webm" or file.file.name|endswith:".ogg" %}
+                <div class="card h-100">
+                    <video controls class="card-img-top img-fluid" style="max-height: 200px; object-fit: cover;">
+                        <source src="{{ file.file.url }}">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            {% else %}
+                <div class="card h-100 p-3 d-flex align-items-center justify-content-center">
+                    <a href="{{ file.file.url }}" download>
+                        <i class="fas fa-file" style="font-size: 48px;"></i>
+                        <div>{{ file.file.name|basename }}</div>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

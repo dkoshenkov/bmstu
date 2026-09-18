@@ -1,0 +1,42 @@
+Start
+=== test/source/stressgen/sg01.test ===
+#10
+1
+--- Test --->
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+=== test/source/stressgen/sg02.test ===
+#10
+3 #N #N
+4 #W #W
+--- Test --->
+3 384 887
+4 kWwdJWiE qkmGvAaN
+3 212 369
+4 rjLERBkP GVY
+3 168 394
+4 pnWsrwT LQkEWnfT
+3 957 874
+4 Uub haSgKt
+3 730 314
+4 DHqhjyVa GHaD
+3 179 789
+4 IfVfa T
+3 369 740
+4 jdU wxjESPPoCl
+3 653 757
+4 aj Wb
+3 445 620
+4 C KK
+3 772 482
+4 hZflFY MjypDQy
+
