@@ -1,0 +1,58 @@
+SYMBOL TABLE:
+80000000 l    d  .text	00000000 .text
+8000003c l    d  .data	00000000 .data
+00000000 l    df *ABS*	00000000 var11.o
+00000008 l       *ABS*	00000000 len
+00000004 l       *ABS*	00000000 enroll
+00000004 l       *ABS*	00000000 elem_sz
+8000003c l       .data	00000000 _x
+80000010 l       .text	00000000 lp
+80000038 l       .text	00000000 lp2
+80000000 g       .text	00000000 _start
+8000005c g       .data	00000000 _end
+
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+80000000:	00000097          	auipc	x1,0x0
+80000004:	03c08093          	addi	x1,x1,60 # 8000003c <_x>
+80000008:	02008a13          	addi	x20,x1,32
+8000000c:	00000fb3          	add	x31,x0,x0
+
+80000010 <lp>:
+80000010:	0000a103          	lw	x2,0(x1)
+80000014:	0040a183          	lw	x3,4(x1)
+80000018:	0080a203          	lw	x4,8(x1)
+8000001c:	00c0a283          	lw	x5,12(x1)
+80000020:	002f8fb3          	add	x31,x31,x2
+80000024:	003f8fb3          	add	x31,x31,x3
+80000028:	004f8fb3          	add	x31,x31,x4
+8000002c:	005f8fb3          	add	x31,x31,x5
+80000030:	01008093          	addi	x1,x1,16
+80000034:	fd409ee3          	bne	x1,x20,80000010 <lp>
+
+80000038 <lp2>:
+80000038:	0000006f          	jal	x0,80000038 <lp2>
+
+Disassembly of section .data:
+
+8000003c <_x>:
+8000003c:	0001                	c.addi	x0,0
+8000003e:	0000                	c.unimp
+80000040:	0002                	c.slli64	x0
+80000042:	0000                	c.unimp
+80000044:	00000003          	lb	x0,0(x0) # 0 <elem_sz-0x4>
+80000048:	0004                	.2byte	0x4
+8000004a:	0000                	c.unimp
+8000004c:	0005                	c.addi	x0,1
+8000004e:	0000                	c.unimp
+80000050:	0006                	c.slli	x0,0x1
+80000052:	0000                	c.unimp
+80000054:	00000007          	.4byte	0x7
+80000058:	0008                	.2byte	0x8
+	...
+riscv64-linux-gnu-objcopy -O binary --reverse-bytes=4 var11.elf var11.bin 
+xxd -g 4 -c 4 -p var11.bin var11.hex
+rm var11.o var11.bin var11.elf

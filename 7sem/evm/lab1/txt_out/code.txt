@@ -1,0 +1,29 @@
+ifeq ($(OS),Windows_NT)
+RV_TOOLS = riscv64-unknown-elf
+else
+RV_TOOLS = riscv64-linux-gnu
+endif
+AS = $(RV_TOOLS)-as --march=rv32i
+LD = $(RV_TOOLS)-ld -b elf32-littleriscv
+OBJCOPY = $(RV_TOOLS)-objcopy
+OBJDUMP = $(RV_TOOLS)-objdump
+SRC = var11
+
+%.o: %.s
+	$(AS) $< -o $@
+
+%.elf: %.o
+	$(LD) -T link.ld $< -o $@
+
+%.bin: %.elf
+	$(OBJDUMP) -D -M numeric,no-aliases -t $<
+	$(OBJCOPY) -O binary --reverse-bytes=4 $< $@ 
+
+%.hex: %.bin 
+	xxd -g 4 -c 4 -p $< $@
+#	$(OBJCOPY) -O verilog -I binary --verilog-data-width=4 $< $@
+
+default: $(SRC).hex
+
+clean: 
+	rm -f *.hex *.elf *.bin *.o

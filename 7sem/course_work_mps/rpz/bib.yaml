@@ -1,0 +1,58 @@
+atmega8515:
+  type: Web
+  title: ATmega8515 8-bit Microcontroller with 8K Bytes In-System Programmable Flash. Datasheet
+  url:
+    value: https://ww1.microchip.com/downloads/en/DeviceDoc/doc2512.pdf
+    date: 2025-05-20
+
+dht11:
+  type: Web
+  title: DHT11 Humidity & Temperature Sensor. Datasheet
+  url:
+    value: https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf
+    date: 2025-05-20
+
+drv8871:
+  type: Web
+  title: DRV8871 3.6-V to 40-V Brushed DC Motor Driver with Internal Current Sensing. Datasheet
+  url:
+    value: https://www.ti.com/lit/ds/symlink/drv8871.pdf
+    date: 2025-05-20
+
+lm016l:
+  type: Web
+  title: LM016L Liquid Crystal Display Module. Datasheet
+  url:
+    value: https://www.hitachi-displays-eu.com/doc/LM016L.pdf
+    date: 2025-05-20
+
+ch340:
+  type: Web
+  title: CH340 USB to Serial Chip. Datasheet
+  url:
+    value: https://www.wch-ic.com/downloads/CH340DS1_PDF.html
+    date: 2025-05-20
+
+mp2307:
+  type: Web
+  title: MP2307 3A, 23V, 340KHz Synchronous Rectified Step-Down Converter. Datasheet
+  url:
+    value: https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2307/
+    date: 2025-05-20
+
+gost-2-702:
+  type: Book
+  title: ГОСТ 2.702-2011. Единая система конструкторской документации. Правила выполнения электрических схем
+  date: 2011
+
+gost-19-701:
+  type: Book
+  title: ГОСТ 19.701-90. Единая система программной документации. Схемы алгоритмов, программ, данных и систем
+  date: 1990
+
+avr-libc:
+  type: Web
+  title: AVR Libc Reference Manual
+  url:
+    value: https://www.nongnu.org/avr-libc/user-manual/
+    date: 2025-05-20

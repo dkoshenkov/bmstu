@@ -1,0 +1,42 @@
+almetyevsk-min-eco:
+  type: Web
+  title: Аналитическая информация по Альметьевскому району. Министерство экологии и природных ресурсов Республики Татарстан.
+  url:
+    value: https://eco.tatarstan.ru/
+    date: 2025-09-20
+ecology-problems-almetyevsk:
+  type: Web
+  title: Экологические проблемы города Альметьевск. Министерство экологии и природных ресурсов Республики Татарстан.
+  url:
+    value: https://eco.tatarstan.ru/
+    date: 2025-09-20
+vechernyaya-kazan:
+  type: Web
+  title: Альметьевск попал в число городов России с самым загрязнённым воздухом. Газета "Вечерняя Казань" (11.07.2024).
+  url:
+    value: https://www.evening-kazan.ru/
+    date: 2025-09-20
+tatar-inform:
+  type: Web
+  title: Росгидромет включил Альметьевск в список городов с загрязнённым воздухом. Информационное агентство "Татар-информ" (10.07.2024).
+  url:
+    value: https://www.tatar-inform.ru/
+    date: 2025-09-20
+yuvt-24:
+  type: Web
+  title: В воздухе Альметьевска зафиксировано почти 14-кратное превышение содержания сероводорода. ЮВТ-24 (10.07.2024).
+  url:
+    value: https://yutv.ru/
+    date: 2025-09-20
+cyberleninka-risk:
+  type: Web
+  title: Влияние загрязнения атмосферного воздуха на формирование риска здоровью населения экологически неблагополучного района крупного промышленного центра
+  url:
+    value: https://cyberleninka.ru/article/n/vliyanie-zagryazneniya-atmosfernogo-vozduha-na-formirovanie-riska-zdorovyu-naseleniya-ekologicheski-neblagopoluchnogo
+    date: 2025-09-20
+cyberleninka-vocs:
+  type: Web
+  title: Загрязнение воздуха летучими органическими соединениями.
+  url:
+    value: https://cyberleninka.ru/article/n/zagryaznenie-vozdukha-letuchimi-organicheskimi-soedineniyami
+    date: 2025-09-20

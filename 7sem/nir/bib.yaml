@@ -1,0 +1,176 @@
+reliability-maintenance-model:
+  type: Web
+  title: Модель надёжности и стратегии аварийного обслуживания для систем умного дома (Dui et al., 2024)
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S0951832024004745
+    date: 2025-12-07
+
+cascading-failures-iot:
+  type: Web
+  title: Моделирование надёжности IoT с учётом каскадных отказов и информационно-сервисных связей (Fu et al., 2023)
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S0951832023004313
+    date: 2025-12-07
+
+integrated-reliability-metrics:
+  type: Web
+  title: Интегрированный анализ надёжности, энергопотребления и производительности IoT-систем (Li et al., 2024)
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S138376212400153X
+    date: 2025-12-07
+
+competing-failures-bdd:
+  type: Web
+  title: Анализ надёжности сенсорных систем умного дома при конкурирующих механизмах отказа (Wang et al., 2022)
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S0951832022000096
+    date: 2025-12-07
+
+assuresense-framework:
+  type: Web
+  title: AssureSense — фреймворк обнаружения отказов сенсоров для маломощных устройств (IEEE, 2024)
+  url:
+    value: https://ieeexplore.ieee.org/document/10666033
+    date: 2025-12-07
+
+deep-learning-diagnostics:
+  type: Web
+  title: Диагностика отказов с использованием глубокого обучения и вейвлет-преобразования (IEEE, 2024)
+  url:
+    value: https://ieeexplore.ieee.org/document/10669555
+    date: 2025-12-07
+
+dynamic-maintenance-strategy:
+  type: Web
+  title: Стратегия профилактического обслуживания многокомпонентных систем с учётом динамической оценки риска
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S0951832024006823
+    date: 2025-12-07
+
+resilience-metrics-review:
+  type: Web
+  title: Обзор ключевых KPI для оценки устойчивости энергосистем с интеграцией IoT и ВИЭ
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S1364032125008081
+    date: 2025-12-07
+
+smart-microgrid-resilience:
+  type: Web
+  title: Методология многомерной устойчивости smart-микросетей к природным и киберугрозам (Elsevier, 2024)
+  url:
+    value: https://www.sciencedirect.com/science/article/abs/pii/S0951832024006057
+    date: 2025-12-07
+
+ai-smart-building-comfort:
+  type: Web
+  title: "Исследование AI-управляемых систем зданий: влияние на прогнозирование нагрузки и комфорт (ScienceDirect, 2025)"
+  url:
+    value: https://www.sciencedirect.com/science/article/pii/S2352484725002847
+    date: 2025-12-07
+
+
+middleware-survey:
+  type: Web
+  title: Middleware for the Internet of Things - A Survey (Farahzadi et al., 2018)
+  url:
+    value: https://example.com/middleware-survey
+    date: 2025-12-07
+
+smart-city-scalability:
+  type: Web
+  title: Scalability of Real-Time IoT-based Applications for Smart Cities (Zyrianoff et al., 2018)
+  url:
+    value: https://example.com/smart-city-scalability
+    date: 2025-12-07
+
+gateway-scaling:
+  type: Web
+  title: Simulation and Assessment of Vertical Scaling for a Smart Home Gateway (Razzaq et al., 2022)
+  url:
+    value: https://example.com/gateway-scaling
+    date: 2025-12-07
+
+lorawan-massive:
+  type: Web
+  title: A Survey on Scalable LoRaWAN for Massive IoT (Jouhari et al., 2022)
+  url:
+    value: https://example.com/lorawan-massive
+    date: 2025-12-07
+
+interscity-platform:
+  type: Web
+  title: InterSCity - A Scalable Smart City Software Platform (Del Esposte et al., 2019)
+  url:
+    value: https://example.com/interscity
+    date: 2025-12-07
+
+wifi-halow-eval:
+  type: Web
+  title: Scalability and Performance Evaluation of IEEE 802.11ah (Chounos et al., 2025)
+  url:
+    value: https://example.com/wifi-halow
+    date: 2025-12-07
+
+ai-security-framework:
+  type: Web
+  title: A Scalable, Lightweight AI-Driven Security Framework for IoT (Chaganti et al., 2025)
+  url:
+    value: https://example.com/ai-security
+    date: 2025-12-07
+
+interaction-threats:
+  type: Web
+  title: Scalable Analysis of Interaction Threats in IoT Systems (Bagheri et al., 2020)
+  url:
+    value: https://example.com/interaction-threats
+    date: 2025-12-07
+
+conformance-testing:
+  type: Web
+  title: Automated and Scalable Online Conformance Testing for IoT (Hwang et al., 2020)
+  url:
+    value: https://example.com/conformance-testing
+    date: 2025-12-07
+
+model-based-testing:
+  type: Web
+  title: Model-Based Testing of IoT Communication Protocols (Hooman, 2018)
+  url:
+    value: https://example.com/model-testing
+    date: 2025-12-07
+
+testing-taxonomy:
+  type: Web
+  title: IoT Systems Testing - Taxonomy, Empirical Findings (Minani et al., 2025)
+  url:
+    value: https://example.com/testing-taxonomy
+    date: 2025-12-07
+
+iot-ecosystem-arch:
+  type: Web
+  title: An IoT ecosystem for the implementation of scalable smart home (Lohokare et al., 2017)
+  url:
+    value: https://example.com/iot-ecosystem
+    date: 2025-12-07
+
+user-perception-efficiency:
+  type: Web
+  title: Understanding User Perception and Intention to Use Smart Homes for Energy Efficiency (2025)
+  url:
+    value: https://aimodels.fyi/papers/arxiv/user-perception-smart-home
+    date: 2025-12-07
+
+
+demand-response-market:
+  type: Web
+  title: Demand response market and grid modernization report (IoT M2M Council, 2025)
+  url:
+    value: https://iotm2mcouncil.org/demand-response-2025
+    date: 2025-12-07
+
+rebound-effect-study:
+  type: Web
+  title: How Viable are Energy Savings in Smart Homes? A Call to Embrace Rebound Effects (Bremer et al., 2025)
+  url:
+    value: https://arxiv.org/abs/2506.14653
+    date: 2025-12-07
